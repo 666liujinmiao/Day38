@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- 1. 导入bootstrap的css样式 -->
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+    <!-- 2. 导入jquery框架 -->
+    <script src="js/jquery-3.3.1.js"></script>
+    <!-- 3. 导入bootstrap框架文件 -->
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+</head>
+<body>
+<div class="container">
+    <h2>添加联系人</h2>
+    <form>
+        <!--form-group：表示表单中的一组，包含两个元素：label文字部分，input输入框-->
+        <div class="form-group">
+            <label for="name">姓名：</label>
+            <!--form-control 以100%宽度显示-->
+            <input type="text" class="form-control" id="name" placeholder="请输入姓名">
+        </div>
+        <div class="form-group">
+            <label>性别：</label>
+            <input type="radio" name="gender" id="male"><label for="male">男</label>
+            <input type="radio" name="gender" id="famale"><label for="famale">女</label>
+        </div>
+        <div class="form-group">
+            <label for="birthday"></label>
+            <input type="date" id="birthday" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="edu">学历：</label>
+            <select id="edu" class="form-control">
+                <option value="">-请选择-</option>
+                <option value="1">大专</option>
+                <option value="2">本科</option>
+                <option value="3">硕士</option>
+                <option value="4">博士</option>
+            </select>
+        </div>
+        <!--居中-->
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary">注册</button>
+            <button type="reset" class="btn btn-default">取消</button>
+            <button type="button" class="btn btn-danger">退出</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
